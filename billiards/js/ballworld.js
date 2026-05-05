@@ -52,6 +52,7 @@ function fitCanvas() {
 }
 
 window.onload = function() {
+    $.ajaxSetup({ cache: false });
     app = createApp(document.getElementById("main-canvas"));
     canvasDims();
     fitCanvas();
